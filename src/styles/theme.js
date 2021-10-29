@@ -27,7 +27,7 @@ const variables = css`
     --cyan: #2afeb7;
     --cyan-hover: rgba(42, 254, 183, .7);
 
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
       "Droid Sans", "Helvetica Neue", sans-serif;
     --gradient-start: rgba(17, 153, 142, 1);
   	--gradient-end: rgba(56, 239, 125, 1);
