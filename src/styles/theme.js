@@ -5,3 +5,7 @@ export const defaultColors = {
   foreground: "#01D277", // rgb(1, 210, 119 ) or hsl(154°, 99%, 41%)
 };
 
+  :root {
+    --background: ${defaultColors.background};
+    --foreground: ${defaultColors.foreground};
+  }
