@@ -14,6 +14,11 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
 
+  ::selection{
+    background: var(--deep-black);
+    color: var(--white);
+  }
+  
   body {
     margin: 0;
     padding: 0;
