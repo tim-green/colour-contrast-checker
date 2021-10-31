@@ -9,6 +9,8 @@ const variables = css`
   :root {
     --background: ${defaultColors.background};
     --foreground: ${defaultColors.foreground};
+    --background-hover: ${defaultColors.background};
+    --foreground-hover: ${defaultColors.foreground};
 
     --black: #101010;
     --deep-black: #0A0909;
