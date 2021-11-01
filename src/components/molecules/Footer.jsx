@@ -8,3 +8,14 @@ const FooterContainer = styled.footer`
   color: var(--white);
 `;
 
+
+const Text = styled.p`
+  padding-left: 0;
+  margin-left: 6%;
+  color: var(--gray);
+  font-size: 1.4rem;
+  @media (max-width: 1080px) {
+    margin-left: 2%;
+  }
+  
+`;
