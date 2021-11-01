@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::selection{
-    background: var(--deep-black);
+    background: var(--darkest-gray);
     color: var(--white);
   }
   
