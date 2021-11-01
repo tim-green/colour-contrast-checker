@@ -5,6 +5,21 @@ import Tooltip from "./Tooltip";
 import { useContext } from "react";
 import ColorContext from "../../context/ColorContext";
 
+const Button = styled.button`
+  padding: 0.8rem;
+  background: none;
+  color: var(--gray);
+  transition: .15s color ease;
+
+  &:hover{
+    color: var(--greeny);
+  }
+
+  &:focus {
+    color: var(--cyan);
+  }
+`;
+
 function FormatButton({ target }) {
   const { handleChangeFormat } = useContext(ColorContext);
 
