@@ -4,6 +4,21 @@ import ColorTextInput from "../atoms/ColorTextInput";
 import ColorPicker from "../atoms/ColorPicker";
 import CopyButton from "../atoms/CopyButton";
 import FormatButton from "../atoms/FormatButton";
+
+const Container = styled.div`
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+`;
+
+const ButtonGroup = styled.div`
+  margin-top: .5rem;
+  display: flex;
+`;
+
 function ColorInputField({ target }) {
   return (
     <Container>
