@@ -56,6 +56,19 @@ const Preview = styled.div`
   }
 `;
 
+const Links = styled.div`
+  margin-bottom: 0;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+
+  @media (max-width: ${bp.lg}) {
+    margin-bottom: 4.5rem;
+  }
+`;
+
 export default function PreviewContent() {
   return (
     <Container id="preview">
