@@ -6,6 +6,19 @@ import PreviewText from "../molecules/PreviewText";
 import WcagResults from "../molecules/WcagResults";
 import { bp } from "../../styles/breakpoints";
 
+const Container = styled.div`
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: ${bp.lg}) {
+    max-width: none;
+    width: 100%;
+  }
+`;
+
 export default function PreviewContent() {
   return (
     <Container id="preview">
