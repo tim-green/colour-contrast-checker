@@ -8,6 +8,15 @@ const FooterContainer = styled.footer`
   color: var(--white);
 `;
 
+const GitHubLink = styled.a`
+  color: var(--white);
+  transition: 150ms ease;
+
+  &:hover,
+  &:focus {
+    color: var(--greeny);
+  }
+`;
 
 const Text = styled.p`
   padding-left: 0;
@@ -46,3 +55,28 @@ const TextLink = styled.a`
     }
   }
 `;
+
+export default function Footer() {
+  return (
+    <FooterContainer>
+      {/* github link */}
+      <GitHubLink
+        title="Clone this on GitHub"
+        href="https://github.com/tim-green/colour-contrast-checker"
+        target="_blank"
+        rel="noreferrer"
+      >
+       {/* //fontawesome icon */}
+       <FaGithub size={32} />
+      </GitHubLink>
+      {/* coded by */}
+      <Text>
+        
+        <TextLink href="https://www.timgreen.ws/" target="_blank" rel="noreferrer">
+          Tim Green
+        </TextLink>
+        {" "}= The person who built this tool{" "}
+      </Text>
+    </FooterContainer>
+  );
+}
