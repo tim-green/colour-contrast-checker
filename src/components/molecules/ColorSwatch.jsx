@@ -4,6 +4,14 @@ import ColorContext from "../../context/ColorContext";
 import SaveContext from "../../context/SaveContext";
 import ColorTile from "../atoms/ColorTile";
 import { getRgbString } from "../../utils/colorUtils";
+
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+`;
+
 function ColorSwatch() {
   const { updateBackground, updateForeground, updateContrast } = useContext(ColorContext);
   const { savedColors, setSavedColors } = useContext(SaveContext);
