@@ -19,3 +19,30 @@ const Text = styled.p`
   }
   
 `;
+
+const TextLink = styled.a`
+  position: relative;
+  color: var(--greeny);
+
+  // Animated underline effect on hover
+  &::after {
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0;
+    right: 0;
+    background-color: var(--greeny);
+    transform: scaleX(0);
+    transition: .15s ease;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scaleX(1);
+      transition: .15s ease-in;
+    }
+  }
+`;
