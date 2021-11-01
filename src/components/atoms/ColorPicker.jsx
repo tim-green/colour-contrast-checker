@@ -23,6 +23,13 @@ const PickerButton = styled.button`
   }
 `;
 
+const RgbPicker = styled(RgbColorPicker)`
+  &.react-colorful {
+    width: 25rem;
+    cursor: crosshair;
+  }
+`;
+
 function ColorPicker({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 
