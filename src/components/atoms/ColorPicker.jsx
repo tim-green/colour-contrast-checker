@@ -7,6 +7,22 @@ import Tooltip from "./Tooltip";
 import ColorContext from "../../context/ColorContext";
 import { getColorString } from "../../utils/colorUtils";
 import { hideOnEsc } from "./tooltipPlugins";
+
+const PickerButton = styled.button`
+  width: 3rem;
+  height: 3rem;
+  background: ${(props) => (props.target === "background" ? "var(--background)" : "var(--foreground)")};
+  border: none;
+  box-shadow: 0 0 0 1px var(--dark-gray);
+  border-radius: 0.5rem;
+  -webkit-appearance: none; // Fix iOS appearance bugs
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--greeny);
+  }
+`;
+
 function ColorPicker({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 
