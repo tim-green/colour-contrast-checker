@@ -3,6 +3,27 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { colord, getFormat } from "colord";
 import ColorContext from "../../context/ColorContext";
+
+const Input = styled.input`
+  width: 85%;
+  padding: 0.5rem 0.8rem 0.5rem 5.2rem;
+  margin-right: 0.5rem;
+  background: var(--black);
+  border: none; // Use box-shadow for border instead
+  box-shadow: 0 0 0 1px ${(props) => (props.valid ? "var(--dark-gray)" : "var(--light-red)")};
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 2.3rem;
+  font-weight: 600;
+  -webkit-appearance: none; // Fix iOS appearance bugs
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px ${(props) => (props.valid ? "var(--cyan)" : "var(--light-red)")};
+  }
+`;
+
 function ColorTextInput({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 
