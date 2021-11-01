@@ -19,6 +19,43 @@ const Container = styled.div`
   }
 `;
 
+const Results = styled.div`
+  order: 2;
+  margin-bottom: 5rem;
+  padding: 2rem 5.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem 7rem;
+  background-color: var(--black);
+  border: 1px solid var(--dark-gray);
+  border-radius: 1rem;
+  transition: ease-out border-color .5s;
+
+  &:hover{
+    border-color: var(--deep-black);
+    transition: ease-in-out border-color .5s;
+  }
+  @media (max-width: ${bp.lg}) {
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: ${bp.md}) {
+    padding: 2rem;
+    flex-direction: column;
+  }
+`;
+
+const Preview = styled.div`
+  width: 100%;
+  order: 3;
+
+  @media (max-width: ${bp.lg}) {
+    order: 2;
+  }
+`;
+
 export default function PreviewContent() {
   return (
     <Container id="preview">
