@@ -1,5 +1,7 @@
 import { memo } from "react";
 import styled from "styled-components";
+import { MdCheck, MdClose } from "react-icons/md";
+import PropTypes from "prop-types";
 import { bp } from "../../styles/breakpoints";
 function Rating({ pass }) {
   return (

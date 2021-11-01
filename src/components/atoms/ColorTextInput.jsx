@@ -1,5 +1,8 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import { colord, getFormat } from "colord";
+import ColorContext from "../../context/ColorContext";
 function ColorTextInput({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 

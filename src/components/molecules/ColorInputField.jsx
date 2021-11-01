@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import ColorTextInput from "../atoms/ColorTextInput";
+import ColorPicker from "../atoms/ColorPicker";
+import CopyButton from "../atoms/CopyButton";
+import FormatButton from "../atoms/FormatButton";
 function ColorInputField({ target }) {
   return (
     <Container>

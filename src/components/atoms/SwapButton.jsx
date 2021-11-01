@@ -1,5 +1,8 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import { MdSwapVert } from "react-icons/md";
+import ColorContext from "../../context/ColorContext";
+import Tooltip from "./Tooltip";
 export default function SwapButton() {
   const { handleSwapColors } = useContext(ColorContext);
 

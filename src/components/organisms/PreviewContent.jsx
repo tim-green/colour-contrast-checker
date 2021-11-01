@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { MdOpenInNew } from "react-icons/md";
+import OutlineButton from "../atoms/OutlineButton";
+import ContrastRatio from "../molecules/ContrastRatio";
+import PreviewText from "../molecules/PreviewText";
+import WcagResults from "../molecules/WcagResults";
 import { bp } from "../../styles/breakpoints";
 
 export default function PreviewContent() {

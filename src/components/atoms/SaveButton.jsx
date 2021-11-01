@@ -1,4 +1,9 @@
 import { useContext } from "react";
+import { MdSave } from "react-icons/md";
+import OutlineButton from "../atoms/OutlineButton";
+import ColorContext from "../../context/ColorContext";
+import SaveContext from "../../context/SaveContext";
+
 export default function SaveButton() {
   const { savedColors, updateSavedColor } = useContext(SaveContext);
   const { background, foreground } = useContext(ColorContext);

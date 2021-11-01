@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import SaveButtonGroup from "../molecules/SaveButtonGroup";
+import ColorSwatch from "../molecules/ColorSwatch";
 import { bp } from "../../styles/breakpoints";
 export default function SavedColors() {
   return (

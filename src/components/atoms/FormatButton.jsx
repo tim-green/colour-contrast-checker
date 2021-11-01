@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { MdColorLens } from "react-icons/md";
+import PropTypes from "prop-types";
+import Tooltip from "./Tooltip";
+import { useContext } from "react";
+import ColorContext from "../../context/ColorContext";
 
 function FormatButton({ target }) {
   const { handleChangeFormat } = useContext(ColorContext);

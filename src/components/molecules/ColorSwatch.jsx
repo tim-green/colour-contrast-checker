@@ -1,5 +1,9 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import ColorContext from "../../context/ColorContext";
+import SaveContext from "../../context/SaveContext";
+import ColorTile from "../atoms/ColorTile";
+import { getRgbString } from "../../utils/colorUtils";
 function ColorSwatch() {
   const { updateBackground, updateForeground, updateContrast } = useContext(ColorContext);
   const { savedColors, setSavedColors } = useContext(SaveContext);

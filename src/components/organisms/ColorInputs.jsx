@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import SwapButton from "../atoms/SwapButton";
+import ColorInputField from "../molecules/ColorInputField";
+import InputLabel from "../molecules/InputLabel";
 import { bp } from "../../styles/breakpoints";
 
 export default function ColorInputs() {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 function OutlineButton({ anchor, children, color, hoverColor, hrefLink, icon, onClickEvent }) {
   // Additional props if we cast the button into an anchor tag
   const anchorProps = anchor

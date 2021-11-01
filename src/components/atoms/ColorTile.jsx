@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import { MdClose } from "react-icons/md";
 
 function ColorTile({ background, foreground, handleLoad, handleDelete }) {
   return (

@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import { MdInfoOutline } from "react-icons/md";
+import Tooltip from "../atoms/Tooltip";
 function InputLabel({ labelFor, title, tooltipText }) {
   return (
     <Container>

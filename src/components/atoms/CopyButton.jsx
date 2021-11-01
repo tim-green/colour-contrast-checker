@@ -1,4 +1,8 @@
+import { MdContentCopy } from "react-icons/md";
 import styled from "styled-components";
+import copyToClipboard from "copy-text-to-clipboard";
+import PropTypes from "prop-types";
+import Tooltip from "./Tooltip";
 
 function CopyButton({ target }) {
   const handleClick = (event) => {

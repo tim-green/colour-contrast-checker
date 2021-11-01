@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Tippy from "@tippyjs/react/headless";
+import PropTypes from "prop-types";
 // `children` component needs to wrapped by a span - https://github.com/atomiks/tippyjs-react#component-children
 const ChildrenWrapper = styled.span`
   display: inline-block;

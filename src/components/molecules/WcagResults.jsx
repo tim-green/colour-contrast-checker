@@ -1,4 +1,9 @@
 import { useContext } from "react";
+import ColorContext from "../../context/ColorContext";
+import Rating from "../atoms/Rating";
+import Tooltip from "../atoms/Tooltip";
+import { getWcagRatings } from "../../utils/colorUtils";
+
 export default function WcagResults() {
   const { contrast } = useContext(ColorContext);
 

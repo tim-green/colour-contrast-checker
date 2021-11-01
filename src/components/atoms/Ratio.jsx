@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import ColorContext from "../../context/ColorContext";
 import { bp } from "../../styles/breakpoints";
 export default function Ratio() {
   let { contrast } = useContext(ColorContext);

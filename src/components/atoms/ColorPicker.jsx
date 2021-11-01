@@ -1,5 +1,12 @@
 import { useContext } from "react";
 import styled from "styled-components";
+import { RgbColorPicker } from "react-colorful";
+import { colord } from "colord";
+import PropTypes from "prop-types";
+import Tooltip from "./Tooltip";
+import ColorContext from "../../context/ColorContext";
+import { getColorString } from "../../utils/colorUtils";
+import { hideOnEsc } from "./tooltipPlugins";
 function ColorPicker({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 
