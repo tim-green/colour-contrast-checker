@@ -1,1 +1,28 @@
 import { useContext } from "react";
+export default function SaveButton() {
+  const { savedColors, updateSavedColor } = useContext(SaveContext);
+  const { background, foreground } = useContext(ColorContext);
+
+  const MAX_SAVED_COLORS = 10;
+
+  const handleOnclick = () => {
+    const newSavedColors = [...savedColors, { background, foreground, time: Date.now() }];
+
+    if (newSavedColors.length > MAX_SAVED_COLORS) {
+      newSavedColors.shift(); // remove the first item
+    }
+
+    updateSavedColor(newSavedColors);
+  };
+
+  return (
+    <OutlineButton
+      color="var(--greeny)"
+      hoverColor="var(--greeny-hover)"
+      icon={<MdSave size={18} />}
+      onClickEvent={handleOnclick}
+    >
+      Save Color
+    </OutlineButton>
+  );
+}
