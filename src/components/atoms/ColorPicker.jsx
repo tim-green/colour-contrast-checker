@@ -30,6 +30,18 @@ const RgbPicker = styled(RgbColorPicker)`
   }
 `;
 
+// Inlined styles for tooltip
+const styles = {
+  buttonWrapper: {
+    position: "absolute",
+    left: "0.8rem",
+  },
+  tooltipBox: {
+    padding: "1rem",
+    borderRadius: "0.8rem",
+  },
+};
+
 function ColorPicker({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 
