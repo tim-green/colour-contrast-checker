@@ -29,3 +29,13 @@ export function getColorString(color, format) {
 
   return output;
 }
+
+/**
+ * Convert a RGB object into a string
+ * @param {{r: number, g: number, b: number}} rgbColor Input color object
+ * @returns {string}
+ */
+export function getRgbString(rgbColor) {
+  return colord(rgbColor).toRgbString();
+}
+
