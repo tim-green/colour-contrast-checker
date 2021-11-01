@@ -24,6 +24,14 @@ const Input = styled.input`
   }
 `;
 
+const HelperText = styled.p`
+  position: absolute;
+  bottom: -2rem;
+  color: var(--light-red);
+  font-size: 1.4rem;
+  visibility: ${(props) => (props.visible ? "visible" : "hidden")};
+`;
+
 function ColorTextInput({ target }) {
   const { background, updateBackground, foreground, updateForeground } = useContext(ColorContext);
 
