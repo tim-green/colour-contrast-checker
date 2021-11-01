@@ -22,6 +22,7 @@ const variables = css`
     --red: #C30000;
     --light-red: #E15346;
     --light-red-hover: rgba(225, 83, 70, .2);
+    --forest: #0B2B26;
     --greeny: #01D277;
     --greeny-hover: rgba(1, 210, 119, .2);
     --green: #5BB015;
