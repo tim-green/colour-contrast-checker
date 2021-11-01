@@ -4,6 +4,19 @@ import copyToClipboard from "copy-text-to-clipboard";
 import PropTypes from "prop-types";
 import Tooltip from "./Tooltip";
 
+const Button = styled.button`
+  padding: .8rem;
+  background: none;
+  color: var(--gray);
+  transition: .15s color ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--greeny);
+    transition: .5s color ease-out;
+  }
+`;
+
 function CopyButton({ target }) {
   const handleClick = (event) => {
     const colorInput = document.getElementById(target).value;
