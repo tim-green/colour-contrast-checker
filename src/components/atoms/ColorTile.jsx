@@ -2,6 +2,11 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import { MdClose } from "react-icons/md";
 
+const Container = styled.div`
+  position: relative;
+  width: max-content;
+`;
+
 function ColorTile({ background, foreground, handleLoad, handleDelete }) {
   return (
     <Container>
