@@ -8,11 +8,11 @@
     "copy-text-to-clipboard": "^3.0.1",
     "cra-template": "1.1.2",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
     "react-colorful": "^5.5.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
+    "react": "^18.0.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
