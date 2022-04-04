@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@tippyjs/react": "^4.2.5",
     "colord": "^2.7.0",
+    "@tippyjs/react": "^4.2.6",
     "copy-text-to-clipboard": "^3.0.1",
     "cra-template": "1.1.2",
     "prop-types": "^15.7.2",
